@@ -2,3 +2,6 @@ Path. To be updated.
 
 http://maps.google.com/maps/api/elevation/xml?locations=52.4732142,13.4268688&sensor=false
 http://maps.googleapis.com/maps/api/geocode/xml?address=leinestrasse+11+berlin&sensor=false
+
+https://developers.google.com/maps/documentation/elevation/
+https://developers.google.com/maps/documentation/geocoding/
