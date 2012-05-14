@@ -17,6 +17,7 @@ public class GoogleGeoCode {
 		XMLElement mainXML = getMainXML();
 		lonlat[0] = getLongitude(mainXML);
 		lonlat[1] = getLatitude(mainXML);
+		PApplet.println("	"+lonlat[0]+" "+lonlat[1]);
 		return lonlat;
 	}
 

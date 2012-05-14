@@ -32,14 +32,14 @@ public class GoogleGeocodeThread extends Thread {
 
 	public void start() {
 		running = true;
-		System.out
-				.println("GoogleElevation Thread started (will execute every "
-						+ wait + " milliseconds.)");
+		System.out.println("GoogleGeocode Thread started (will execute every "
+				+ wait + " milliseconds.)");
 		super.start();
+		run();
 	}
 
 	public void run() {
-		while (running & counter <= endNr) {
+		while (running && counter <= endNr) {
 			lonlat[counter - startNr] = geocode.getLonLat(streetName + "+"
 					+ counter + "+" + city);
 			PApplet.println(streetName + "+" + this.counter + "+" + city);

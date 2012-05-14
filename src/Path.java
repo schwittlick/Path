@@ -9,19 +9,21 @@ public class Path extends PApplet{
 	int startNr = 10;
 	int endNr = 20;
 	
-	float[] elevations = new float[57];
+	float[][] lonlat;
+	
 	public void setup() {
 		size(800, 800, P3D);
 		elevation = new GoogleElevation();
 		
-		geocodeThread = new GoogleGeocodeThread(this, 10000, "Leinestrasse", startNr, endNr, "Berlin");
+		geocodeThread = new GoogleGeocodeThread(this, 2000, "leinestrasse", startNr, endNr, "Berlin");
 		geocodeThread.start();
-		geocodeThread.run();
+		
+		lonlat = geocodeThread.getlonlats();
 	}
 
 	public void draw() {
 		
-		float[][] lonlat = geocodeThread.getlonlats();
+		
 		for(int i=0; i<lonlat.length; i++){
 			println("Leinestraße "+(i+startNr)+" "+lonlat[i][0]);
 			println("Leinestraße "+(i+startNr)+" "+lonlat[i][1]);
