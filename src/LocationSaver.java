@@ -3,7 +3,9 @@ import java.io.PrintWriter;
 import processing.core.PApplet;
 
 @SuppressWarnings("serial")
-public class Path extends PApplet {
+public class LocationSaver {
+	PApplet p;
+	
 	GoogleElevation elevation;
 
 	GoogleGeocodeThread geocodeThread;
@@ -19,8 +21,8 @@ public class Path extends PApplet {
 
 	PrintWriter output;
 
-	public void setup() {
-		size(800, 800, P3D);
+	public LocationSaver(PApplet p) {
+		this.p = p;
 		/*
 		streetNames[0] = "Hermannstrasse";
 		streetNames[1] = "Hasenheide";
@@ -30,7 +32,7 @@ public class Path extends PApplet {
 		streetNames[5] = "Sonnenallee";
 		streetNames[6] = "Kottbusser Damm";
 		*/
-		geocodeThread = new GoogleGeocodeThread(this, 500, streetName, startNr,
+		geocodeThread = new GoogleGeocodeThread(p, 500, streetName, startNr,
 				endNr, cityName);
 		geocodeThread.start();
 		lonlat = geocodeThread.getlonlats();
@@ -41,17 +43,12 @@ public class Path extends PApplet {
 		
 		saveLocDataToFiles();
 	}
-
-	public void draw() {
-		//exit();
-		noLoop();
-	}
 	
 	void saveLocDataToFiles(){
-		output = createWriter(streetName + "_" + cityName + ".txt");
+		output = p.createWriter(streetName + "_" + cityName + ".txt");
 		output.println("#street,housenr,city,long,lat,elevation");
 		for (int i = 0; i < lonlat.length; i++) {
-			println(streetName+" " + (i + startNr) + " " + lonlat[i][0] + " "
+			p.println(streetName+" " + (i + startNr) + " " + lonlat[i][0] + " "
 					+ lonlat[i][1]+","+elevations[i]);
 			//longlat order messed up.
 			
