@@ -1,0 +1,16 @@
+#street,housenr,city,long,lat,elevation
+Kreuzbergstraße,1,Berlin,13.377027,52.489304,46.202923
+Kreuzbergstraße,2,Berlin,13.385414,52.49018,45.0
+Kreuzbergstraße,3,Berlin,13.38529,52.4901,45.0
+Kreuzbergstraße,4,Berlin,13.38513,52.49027,45.0
+Kreuzbergstraße,5,Berlin,13.38496,52.49026,45.0
+Kreuzbergstraße,6,Berlin,13.38468,52.49029,44.783356
+Kreuzbergstraße,7,Berlin,13.3844,52.4903,44.190144
+Kreuzbergstraße,8,Berlin,13.38427,52.49021,43.81621
+Kreuzbergstraße,9,Berlin,13.3841505,52.49012,43.41898
+Kreuzbergstraße,10,Berlin,13.37692,52.48922,46.513935
+Kreuzbergstraße,11,Berlin,13.383539,52.490112,42.07952
+Kreuzbergstraße,12,Berlin,13.383539,52.490112,42.07952
+Kreuzbergstraße,13,Berlin,13.383164,52.490047,41.392956
+Kreuzbergstraße,14,Berlin,13.382956,52.490032,41.252216
+Kreuzbergstraße,15,Berlin,13.382682,52.490013,41.0584

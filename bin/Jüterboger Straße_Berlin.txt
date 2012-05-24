@@ -1,0 +1,10 @@
+#street,housenr,city,long,lat
+Jüterboger Straße,2,Berlin,13.39772,52.48629,48.456013
+Jüterboger Straße,3,Berlin,13.39798,52.48625,48.135616
+Jüterboger Straße,5,Berlin,13.39739,52.48652,48.636642
+Jüterboger Straße,6,Berlin,13.39739,52.48652,48.636642
+Jüterboger Straße,7,Berlin,13.39624,52.48652,51.622906
+Jüterboger Straße,8,Berlin,13.3956,52.48663,53.48704
+Jüterboger Straße,9,Berlin,13.39526,52.48665,54.477364
+Jüterboger Straße,10,Berlin,13.39508,52.48673,55.000824
+Jüterboger Straße,17,Berlin,13.3985,52.4864,47.15986

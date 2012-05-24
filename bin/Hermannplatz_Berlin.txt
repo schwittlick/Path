@@ -1,0 +1,11 @@
+#street,housenr,city,long,lat,elevation
+Hermannplatz,2,Berlin,13.424888,52.486668,41.897224
+Hermannplatz,3,Berlin,13.42495,52.48655,41.960617
+Hermannplatz,4,Berlin,13.425008,52.486816,41.727352
+Hermannplatz,5,Berlin,13.42515,52.48693,41.49951
+Hermannplatz,6,Berlin,13.42515,52.48693,41.49951
+Hermannplatz,7,Berlin,13.4257,52.48708,41.14945
+Hermannplatz,8,Berlin,13.425407,52.487293,41.0
+Hermannplatz,9,Berlin,13.4257,52.48708,41.14945
+Hermannplatz,10,Berlin,13.42438,52.48727,41.627026
+Hermannplatz,15,Berlin,0.0,0.0,-1000.0
