@@ -39,11 +39,13 @@ public class GoogleGeocodeThread extends Thread {
 	}
 
 	public void run() {
-		while (running && counter <= endNr) {
+		while (running && counter < endNr) {
 			lonlat[counter - startNr] = geocode.getLonLat(streetName + "+"
 					+ counter + "+" + city);
-			PApplet.println(streetName + "+" + this.counter + "+" + city);
-			this.counter++;
+			PApplet.println("geocodethread: "+this.counter + "/" + endNr);
+			if (lonlat[counter - startNr][0] > 1.0) {
+				this.counter++;
+			}
 			try {
 				sleep(wait);
 			} catch (Exception e) {
@@ -53,7 +55,7 @@ public class GoogleGeocodeThread extends Thread {
 	}
 
 	public void quit() {
-		PApplet.println("Thread quit.");
+		PApplet.println("GoogleGeocode thread quit.");
 		running = false;
 		interrupt();
 	}
